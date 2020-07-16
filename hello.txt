@@ -1,1 +1,24 @@
-My first repositoriy
+Настройка
+	git config --global user.name "My Name"
+	git config --global user.email myEmail@example.com
+Создание нового репозитория
+	cd Desktop/git_exercise/
+	git init(создать новый репозиторий)
+Определение состояния
+	git status(показывает информацию о текущем состоянии репозитория: актуальна ли информация на нём, нет ли чего-то нового, что поменялось, и так далеe)
+Подготовка файлов
+	git add hello.txt
+	git add -A(добавить все, что находится в директории)
+
+Коммит(фиксация изменений)
+	git commit -m "Initial commit."
+
+Удаленные репозитории
+1. Подключение к удаленному репозиторию
+	git remote add origin https://github.com/tutorialzine/awesome-project.git
+2. Отправка изменений на сервер
+	git push origin master
+3.Клонирование репозитория
+	git clone https://github.com/tutorialzine/awesome-project.git
+4.Запрос изменений с сервера
+	git pull origin master
